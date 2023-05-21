@@ -60,10 +60,14 @@ const sampelMedicinesList = [
             }
         ]
     }
-]
+];
+
 // localStorage.removeItem("medicinesList");
-let getMedicinesList = JSON.parse(localStorage.getItem("medicinesList"));
-if (!getMedicinesList) localStorage.setItem("medicinesList", sampelMedicinesList);
+
+let getMedicinesList = localStorage.getItem("medicinesList");
+if (!getMedicinesList) localStorage.setItem("medicinesList", JSON.stringify(sampelMedicinesList));
+
+
 
 
 class Medicine extends Component{

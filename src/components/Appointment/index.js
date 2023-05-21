@@ -40,18 +40,20 @@ const data = JSON.stringify([{
     id:"a5e988a9-cd7e-443e-8a3a-7038d416b48c",
     appointmentStatus: "UPCOMING",
     priority: 3
-}])
+}]);
 
-// localStorage.removeItem("appointmentList")
-let getAppointmentList = JSON.parse(localStorage.getItem("appointmentList"));
+// localStorage.removeItem("appointmentList");
+let getAppointmentList = localStorage.getItem("appointmentList");
 if (!getAppointmentList) localStorage.setItem("appointmentList", data);
-console.log(getAppointmentList)
+
+
 
 
 class Appointment extends Component{
     state = {
         addAppoinment: false, 
         appointmentList: [...JSON.parse(localStorage.getItem("appointmentList"))],
+        // appointmentList: [...data],
         hospitalName: "",
         doctorName: "",
         appDate: "",
