@@ -1,0 +1,59 @@
+.activities-container{
+    padding: 20px;
+    color: #333;
+}
+.activities-container-section{
+    margin-bottom: 20px;
+}
+.para-activities{
+    font-size: 18px;
+    font-weight: 600;
+}
+.heading-activities{
+    text-align: center;
+    padding: 10px;
+    background-color: #2C3B4F;
+    color: rgba(242, 235, 212, 1);
+}
+.grid-container{
+    display: grid;
+    width: 80%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 auto;
+    margin-top: 35px;
+    padding: 0 2rem;
+}
+.grid-item{
+    background-color: rgba(242, 235, 212, 1);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, 
+                rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.details-list{
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+.yoga-heading{
+    font-size: 22px;
+    margin: 10px 0;
+    text-align: center;
+    color: #333;
+}
+iframe{
+    width: 100%;
+    align-self: self-end;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 0px -2px 5px rgba(79, 79, 79, 0.8);
+    border: none;
+}
+.icon-walk, .icon-yoga{
+    width: 30px;
+    height: 30px;
+    color: rgba(242, 235, 212, 1);
+}

@@ -1,0 +1,30 @@
+.history-container{
+    /* background-color: rgba(193, 205, 193, 1); */
+    /* background-color: rgba(242, 235, 212, 1); */
+    color: #333;
+}
+.current-medication-container{
+    padding-left: 25px;
+    margin-left: 25px;
+}
+.history-section-heading{
+    margin-bottom: 12px;
+    background-color: #2C3B4F;
+    color: rgba(242, 235, 212, 1);
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+.history-section-container{
+    /* background-color: gray; */
+    padding: 20px;
+    /* border-bottom: 2px solid #333; */
+}
+.current-medication-container >*{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.current-medication-container li::after{
+    content: ".";
+}
