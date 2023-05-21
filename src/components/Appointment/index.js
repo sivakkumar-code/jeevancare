@@ -33,13 +33,25 @@ const sortByOption = [
     },
 ];
 
-const getAppointmentList = JSON.parse(localStorage.getItem("appointmentList"))
+const data = JSON.stringify([{
+    appointentDate: "2023-05-23",
+    doctor: "Ramesh artho",
+    hospital: "xyz hospital chennai",
+    id:"a5e988a9-cd7e-443e-8a3a-7038d416b48c",
+    appointmentStatus: "UPCOMING",
+    priority: 3
+}])
+
+// localStorage.removeItem("appointmentList")
+let getAppointmentList = JSON.parse(localStorage.getItem("appointmentList"));
+if (!getAppointmentList) localStorage.setItem("appointmentList", data);
 console.log(getAppointmentList)
+
 
 class Appointment extends Component{
     state = {
         addAppoinment: false, 
-        appointmentList: [...getAppointmentList],
+        appointmentList: [...JSON.parse(localStorage.getItem("appointmentList"))],
         hospitalName: "",
         doctorName: "",
         appDate: "",

@@ -63,13 +63,14 @@ const sampelMedicinesList = [
 ]
 // localStorage.removeItem("medicinesList");
 let getMedicinesList = JSON.parse(localStorage.getItem("medicinesList"));
-if (!getMedicinesList) getMedicinesList = sampelMedicinesList;
+if (!getMedicinesList) localStorage.setItem("medicinesList", sampelMedicinesList);
+
 
 class Medicine extends Component{
     state = {
         medicalCondition: "", 
         tablets: "", 
-        medicinesList: [...getMedicinesList],
+        medicinesList: [...JSON.parse(localStorage.getItem("medicinesList"))],
         showForm: false,
         errMessage: "",
         updateId: ""

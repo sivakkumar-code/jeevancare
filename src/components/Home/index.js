@@ -17,17 +17,6 @@ const availableTabs = {
     appointment: 3,
     history: 4
 }
-const t = JSON.stringify([{
-    appointentDate: "2023-05-23",
-    doctor: "Ramesh artho",
-    hospital: "xyz hospital chennai",
-    id:"a5e988a9-cd7e-443e-8a3a-7038d416b48c",
-    appointmentStatus: "UPCOMING"
-}])
-// localStorage.removeItem("appointmentList")
-const getAppointmentList = localStorage.getItem("appointmentList");
-if (!getAppointmentList) localStorage.setItem("appointmentList", t);
-console.log(getAppointmentList)
 
 
 class Home extends Component{
