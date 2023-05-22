@@ -147,6 +147,7 @@ input{
     border: none;
     width: 30px;
     height: 30px;
+    cursor: pointer;
 }
 .card-icons-appointment{
     width: 24px;

@@ -199,7 +199,7 @@ class Medicine extends Component{
                 <div className="form-grid-item">
                     <label htmlFor = "disease-name">Disease Name</label>
                     <input 
-                        placeholder="Enter Hospital Name" 
+                        placeholder="Enter Disease Name" 
                         id = "disease-name" 
                         type = "text" 
                         value={medicalCondition} 

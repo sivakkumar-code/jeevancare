@@ -60,6 +60,7 @@ h3:last-child{
     font-size: 18px;
     font-weight: 600;
     color: rgba(242, 235, 212, 1);
+    cursor: pointer;
 }
 .selected-nav-li{
     font-size: 21px;
